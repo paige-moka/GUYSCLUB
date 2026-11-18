@@ -1,0 +1,49 @@
+<!--page title="Contact GUYS&amp;CO | Send us a note" description="Questions about GUYS Club membership or The BUILT Method Growth Plan? Send GUYS&amp;CO a note and a real person will reply." path="/contact.html" home="index.html"-->
+<header class="page-head night" id="top">
+  <div class="wrap">
+    <span class="eyebrow">Contact</span>
+    <h1>Send us a <span class="p">note.</span></h1>
+    <p class="lede">Questions about membership, The BUILT Method or the Growth Plan. A real person reads every note and replies within two business days.</p>
+  </div>
+</header>
+<main id="main">
+<section>
+  <div class="wrap contact">
+    <div>
+      <span class="eyebrow">Or go straight to it</span>
+      <ol class="steps3">
+        <li><b>1</b><span><strong>Join the Club.</strong> <a href="index.html#apply" style="color:var(--pink-ink)">Apply for membership</a>. Five minutes, one real question.</span></li>
+        <li><b>2</b><span><strong>Recommend someone.</strong> <a href="index.html#know-a-guy" style="color:var(--pink-ink)">I know a guy</a>.</span></li>
+        <li><b>3</b><span><strong>Want a plan for your business?</strong> <a href="{{STRATEGY_URL}}" data-cta="strategy" target="_blank" rel="noopener" style="color:var(--pink-ink)">Book a Strategy Call</a>.</span></li>
+      </ol>
+    </div>
+
+    <form class="form" id="inquiry" data-form="inquiry" novalidate>
+      <p class="hp" aria-hidden="true"><label>Leave this empty <input type="text" name="company_site" tabindex="-1" autocomplete="off"></label></p>
+      <div class="pair">
+        <label class="q" for="f-name">Your name<input id="f-name" name="name" type="text" autocomplete="name" required maxlength="120" data-msg="Please add your name."></label>
+        <label class="q" for="f-biz">Business<span class="h">Optional</span><input id="f-biz" name="business" type="text" autocomplete="organization" maxlength="160"></label>
+      </div>
+      <div class="pair">
+        <label class="q" for="f-email">Email<input id="f-email" name="email" type="email" autocomplete="email" required maxlength="200" data-msg="Please add an email we can reply to."></label>
+        <label class="q" for="f-phone">Phone<span class="h">Optional</span><input id="f-phone" name="phone" type="tel" autocomplete="tel" maxlength="40"></label>
+      </div>
+      <label class="q" for="f-need">What is it about?
+        <select id="f-need" name="need" required data-msg="Please choose one.">
+          <option value="">Choose one</option>
+          <option>GUYS Club membership</option>
+          <option>The BUILT Method Growth Plan</option>
+          <option>Partnering with GUYS&amp;CO</option>
+          <option>Something else</option>
+        </select>
+      </label>
+      <label class="q" for="f-msg">Your note<textarea id="f-msg" name="message" required minlength="10" maxlength="4000" data-msg="Please tell us a little more (a sentence or two)."></textarea></label>
+      <label class="check" for="f-ok"><input type="checkbox" id="f-ok" name="consent" value="yes" required data-msg="Please tick the box so we can reply to you."> Yes, GUYS&amp;CO can reply to me about this note.</label>
+      <button class="btn" type="submit" style="justify-self:start">Send note</button>
+      <div class="form-status" role="status" aria-live="polite" hidden></div>
+      <div class="done" hidden><b>Note received</b><p>Thank you. A real person will reply within two business days.</p></div>
+      <p class="fine">We use what you send only to reply to you. See our <a href="privacy.html">privacy page</a>.</p>
+    </form>
+  </div>
+</section>
+</main>

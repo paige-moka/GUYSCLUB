@@ -1,0 +1,35 @@
+{
+  "name": "guysco-platform",
+  "version": "2.0.0",
+  "private": true,
+  "description": "GUYS&CO public website and private Member Lounge (Next.js, Supabase, Stripe)",
+  "scripts": {
+    "site": "node build.mjs",
+    "dev": "node build.mjs && next dev",
+    "build": "node build.mjs && next build",
+    "start": "next start",
+    "typecheck": "tsc --noEmit",
+    "seed:demo": "node scripts/seed-demo.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@supabase/ssr": "^0.12.7",
+    "@supabase/supabase-js": "^2.119.0",
+    "next": "^15.5.29",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "server-only": "^0.0.1",
+    "stripe": "^23.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "autoprefixer": "^10.6.2",
+    "postcss": "^8.5.33",
+    "tailwindcss": "^3.4.19",
+    "typescript": "5.9"
+  }
+}

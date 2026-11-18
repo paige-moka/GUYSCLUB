@@ -1,6 +1,3 @@
-[README.md](https://github.com/user-attachments/files/35039097/README.md)
-# GUYSCLUB
-the GUYS Club Community Site
 # GUYS&CO Platform
 
 The GUYS Club website, its working forms, and the private Member Lounge, in one project.

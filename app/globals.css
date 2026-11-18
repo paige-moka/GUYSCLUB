@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Brand fonts, served from the public site's own files */
+@font-face{font-family:"Anton";font-style:normal;font-weight:400;font-display:swap;src:url("/assets/fonts/anton-latin-400-normal.woff2") format("woff2")}
+@font-face{font-family:"IBM Plex Sans";font-style:normal;font-weight:400;font-display:swap;src:url("/assets/fonts/ibm-plex-sans-latin-400-normal.woff2") format("woff2")}
+@font-face{font-family:"IBM Plex Sans";font-style:normal;font-weight:500;font-display:swap;src:url("/assets/fonts/ibm-plex-sans-latin-500-normal.woff2") format("woff2")}
+@font-face{font-family:"IBM Plex Sans";font-style:normal;font-weight:600;font-display:swap;src:url("/assets/fonts/ibm-plex-sans-latin-600-normal.woff2") format("woff2")}
+@font-face{font-family:"IBM Plex Sans";font-style:normal;font-weight:700;font-display:swap;src:url("/assets/fonts/ibm-plex-sans-latin-700-normal.woff2") format("woff2")}
+@font-face{font-family:"IBM Plex Mono";font-style:normal;font-weight:400;font-display:swap;src:url("/assets/fonts/ibm-plex-mono-latin-400-normal.woff2") format("woff2")}
+@font-face{font-family:"IBM Plex Mono";font-style:normal;font-weight:500;font-display:swap;src:url("/assets/fonts/ibm-plex-mono-latin-500-normal.woff2") format("woff2")}
+@font-face{font-family:"IBM Plex Mono";font-style:normal;font-weight:600;font-display:swap;src:url("/assets/fonts/ibm-plex-mono-latin-600-normal.woff2") format("woff2")}
+
+@layer base {
+  html { -webkit-text-size-adjust: 100%; }
+  body { @apply bg-paper text-ink font-sans antialiased; font-size: 1rem; line-height: 1.55; }
+  h1, h2, h3 { @apply font-display font-normal uppercase; line-height: .95; letter-spacing: .005em; text-wrap: balance; }
+  a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible, summary:focus-visible { outline: 3px solid #FFA3CB; outline-offset: 2px; }
+  ::selection { background: #FFA3CB; color: #0B0B0C; }
+}
+
+@layer components {
+  .eyebrow { @apply font-mono text-[.72rem] uppercase tracking-[.16em] font-medium text-pink-ink; }
+  .btn { @apply inline-flex items-center justify-center gap-2 font-mono text-[.76rem] uppercase tracking-[.12em] font-semibold px-4 py-3 border-2 border-pink bg-pink text-ink no-underline cursor-pointer transition-transform; }
+  .btn:hover { transform: translate(-2px, -2px); box-shadow: 4px 4px 0 #0B0B0C; }
+  .btn:disabled { @apply opacity-50 cursor-not-allowed; transform: none; box-shadow: none; }
+  .btn-dark { @apply btn bg-ink text-pink border-ink; }
+  .btn-dark:hover { box-shadow: 4px 4px 0 #FFA3CB; }
+  .btn-ghost { @apply btn bg-transparent border-ink text-ink; }
+  .btn-sm { @apply px-3 py-2 text-[.68rem]; }
+  .link { @apply font-mono text-[.74rem] uppercase tracking-[.12em] font-semibold no-underline border-b-2 border-pink pb-0.5; }
+  .card { @apply border-2 border-ink bg-paper p-5; }
+  .card-soft { @apply border border-line bg-paper p-5; }
+  .label { @apply font-mono text-[.68rem] uppercase tracking-[.14em] font-semibold block mb-1.5; }
+  .input { @apply w-full min-w-0 border-2 border-ink bg-paper text-ink px-3 py-2.5 text-[.95rem] rounded-none; }
+  .tbl { @apply w-full border-collapse text-[.92rem]; }
+  .tbl th { @apply font-mono text-[.66rem] uppercase tracking-[.12em] font-semibold text-muted text-left px-2 py-2 border-b-2 border-ink whitespace-nowrap; }
+  .tbl td { @apply px-2 py-2.5 border-b border-line align-top; }
+  .num { font-variant-numeric: tabular-nums; }
+}
